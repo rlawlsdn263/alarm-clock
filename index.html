@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Alarm Clock</title>
+</head>
+<body>
+    <main class="main">
+        <section class="alarm">
+            <div class="alarm__icon">
+                <img src="files/clock.svg" alt="">
+            </div>
+            <div class="alarm__time">
+                <span class="alarm__time--clock">00:00:00</span>
+                <span class="alarm__time--period">AM</span>
+            </div>
+            <div class="container">
+                <form class="alarm__set">
+                    <input type="number" min="1" max="12" placeholder="Hours" class="hours">
+                    <input type="number" min="00" max="59" placeholder="Minutes" class="minutes">
+                    <input type="text" placeholder="AM/PM" class="period">
+                </form>
+                <form class="alarm__btn">
+                    <button>Set Alarm</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="time.js"></script>
+</body>
+</html>
